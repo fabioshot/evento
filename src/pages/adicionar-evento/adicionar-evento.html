@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Adicionar Evento</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list>
+    <ion-item>
+      <ion-label floating="">Descrição</ion-label>
+      <ion-input type="text" [(ngModel)]="this.evento.descricao"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating="">Responsável</ion-label>
+      <ion-input type="text" [(ngModel)]="this.evento.responsavel"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating="">Cidade</ion-label>
+      <ion-input type="text" [(ngModel)]="this.evento.cidade"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating="">Local</ion-label>
+      <ion-input type="text" [(ngModel)]="this.evento.local"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Data</ion-label>
+      <ion-datetime displayFormat="DD/MM/YYYY" pickerFormat="DD MMMM YYYY" max="2030" [(ngModel)]="this.evento.data"></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Horário</ion-label>
+      <ion-datetime displayFormat="HH:mm" pickerFormat="HH mm" [(ngModel)]="this.evento.horario"></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating="">Duração</ion-label>
+      <ion-input type="text" [(ngModel)]="this.evento.duracao"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <button ion-button full round (click)="cadastrarEvento()">Cadastrar Evento</button>
+
+
+</ion-content>

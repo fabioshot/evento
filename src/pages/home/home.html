@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Evento Aqui!
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <button ion-button full round (click)="chamarAdicionarEvento()">Cadastre seu evento!</button>
+
+  <br>
+  <br>
+
+    <ion-list>
+      <ion-item *ngFor="let event of items | async" (click)="abrirOpcao(event)">
+        <h3>{{event.descricao}}</h3>
+        <h2>{{event.responsavel}}</h2>
+      </ion-item>
+    </ion-list>
+</ion-content>
