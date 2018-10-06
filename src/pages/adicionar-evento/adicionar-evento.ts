@@ -2,12 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController} from 'ionic-angular';
 
 import { Evento } from '../../model/evento';
-import { EditarEventoPage } from '../editar-evento/editar-evento';
 import { EventoService } from '../../service/evento.service';
-
-import { AngularFireDatabase, AngularFireList } from 'angularfire2/database';
-import { AngularFirestoreCollection } from 'angularfire2/firestore';
-import { Observable } from 'rxjs/Observable';
 
 
 @IonicPage()
